@@ -1,7 +1,7 @@
 class Controller {
    constructor(grid = new Grid("grid"), inter = new Interface()) {
       this._interface = inter;
-      this._game = new Game("unknown", "normal");
+      this._game = new Game("unknown", "hard");
       this._grid = grid;
       this._table = new Table();
       this.game.initGame(this.grid, this.interface.timer);
@@ -18,7 +18,7 @@ class Controller {
 
          if (this.game.gameState !== 'ongoing' && this.game.gameState !== 'failed') {
             if (!this.interface.nameInput.value) {
-               this.interface.nameInput.style.backgroundColor = 'red';
+               this.interface.nameInput.style.backgroundColor = '#FF6361';
                setTimeout(() => this.interface.nameInput.style.backgroundColor = '#ffffff', 1000);
             } else {
                this.game.stats.username = this.interface.nameInput.value;

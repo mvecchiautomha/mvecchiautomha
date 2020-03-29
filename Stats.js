@@ -1,5 +1,5 @@
 class Stats {
-  constructor(username, difficulty = "normal") {
+  constructor(username, difficulty = "hard") {
     this._username = username;
     this._difficulty = difficulty;
     this._timerValue = 0;

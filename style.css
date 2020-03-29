@@ -6,9 +6,21 @@
 
 body {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
+/**About**/
+
+.about {
+
+
+  width: 1300px;
+  padding: 20px 60px;
+  background-color: #fff;
+	color:#353FF2;
+}
+
+/**Game**/
 .container {
   width: 100%;
   min-height: 100vh;
@@ -17,6 +29,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+	color: #353FF2;
 }
 
 .interface {
@@ -32,7 +45,15 @@ body {
 
 .interface-2 {
   justify-content: center;
+	width: 50px;
 }
+
+
+.difficult {
+	display: none;
+		
+}
+
 
 #difficult-select,
 #username-input,
@@ -59,19 +80,20 @@ body {
 
 .btn {
   border: none;
-  background-color: #333;
+  background-color: #353FF2;
   color: #fff;
   padding: 5px 20px 5px 20px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .btn-start {
   margin-right: 20px;
-  background-color: green;
+  background-color: #FF6361;
 }
 
 .btn-reset {
   margin-left: 20px;
-  background-color: orange;
+  background-color: #353FF2;
 }
 
 .game-grid {
@@ -87,15 +109,15 @@ body {
 }
 
 .game-square {
-  background-color: red;
+  background-color: #FF6361;
   margin: 10px;
-  width: calc(1300px / 7);
-  height: calc(1300px / 7);
+  width: 170px;
+  height: 170px;
   font-size: 96px;
   color: #fff;
   font-weight: bold;
   text-align: center;
-  line-height: calc(1300px / 7);
+  line-height: 170px;
   cursor: pointer;
   background-position: center center;
   background-size: cover;
@@ -105,30 +127,30 @@ body {
 }
 
 .easy .game-square {
-  width: calc(1300px / 7);
-  height: calc(1300px / 7);
-  line-height: calc(1300px / 7);
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
 }
 
 .normal .game-square {
-  width: calc(1300px / 7.8);
-  height: calc(1300px / 11);
-  line-height: calc(1300px / 11);
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
 }
 
 .hard .game-square {
-  width: calc(1300px / 10);
-  height: calc(1300px / 11);
-  line-height: calc(1300px / 11);
+  width: calc(1300px / 8);
+  height: calc(1300px / 8);
+  line-height: calc(1300px / 7);
 }
 
 
 .game-square.active {
-  background-color: green;
+  background-color: #FF6361;
 }
 
 .game-square.done {
-  background-color: royalblue;
+  background-color: #353FF2;
 }
 
 .rank-table-header {
@@ -138,8 +160,9 @@ body {
   width: 1300px;
   height: 100px;
   background-color: #ffffff;
-  color: #222222;
-  border-bottom: 4px solid #666666;
-  text-transform: capitalize;
+  color: #353FF2;
+  border-bottom: 4px solid #FF6361;
   font-weight: bold;
 }
+
+

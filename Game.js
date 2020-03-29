@@ -71,9 +71,9 @@ class Game {
 
       if (difficulty === "hard") return (this.numberOfSquares = numberOfAllSquares);
 
-      this.stats.difficulty = "normal";
+      this.stats.difficulty = "hard";
 
-      return (this.numberOfSquares = numberOfAllSquares / 4 * 3);
+      return (this.numberOfSquares = numberOfAllSquares);
    }
 
    _getRandomValue(values) {

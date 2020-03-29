@@ -50,6 +50,8 @@ class Interface {
   set nameBtn(nameBtn) {
     return (this._nameBtn = nameBtn);
   }
+	
+
 
   get usename() {
     return this._usename;
@@ -85,7 +87,7 @@ class Interface {
 
   changeGameBtn(type = "stop") {
     this.gameBtn.dataset.game = type;
-    this.gameBtn.style.backgroundColor = type === "stop" ? "red" : "green";
+    this.gameBtn.style.backgroundColor = type === "stop" ? "#353FF2" : "#FF6361";
     this.gameBtn.textContent = type.toUpperCase();
   }
 
@@ -110,7 +112,7 @@ class Interface {
     summaryPopup.style.left = '50%';
     summaryPopup.style.transform = 'translate(-50%, -50%)';
     summaryPopup.style.color = '#fffff';
-    summaryPopup.style.backgroundColor = 'green';
+    summaryPopup.style.backgroundColor = '#FF6361';
     summaryPopup.style.textAlign = 'center';
     summaryPopup.id = 'summary-popup';
 
@@ -119,7 +121,7 @@ class Interface {
     btn.textContent = 'NEW GAME';
     btn.id = 'new-game-btn';
     btn.className = 'btn';
-    btn.style.backgroundColor = 'red';
+    btn.style.backgroundColor = '#353FF2';
     summaryPopup.appendChild(btn);
     container.appendChild(summaryPopup);
 
