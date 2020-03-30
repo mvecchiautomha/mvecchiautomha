@@ -6,18 +6,6 @@ class Controller {
       this._table = new Table();
       this.game.initGame(this.grid, this.interface.timer);
 
-      this.addListener(document.getElementById("tmpPopup"), () => {
-         this.interface.addGameSummary(
-            this.game.stats._getTimerResoult(),
-            this.game.stats.actionsCounter,
-            this.game.initGame,
-            this.grid,
-            this.interface.timer,
-            this.interface.actionsCounter,
-            this.game,
-            document.getElementById('container'))
-      });
-
       this.addListener(this.interface.difficultySelect, () => {
          this.game.changeDifficulty(this.interface.difficultySelect.value);
          this.game.initGame(this.grid, this.interface.timer, this.interface.actionsCounter);

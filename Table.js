@@ -8,7 +8,7 @@ class Table {
          display: "flex",
          width: "1300px",
          flexDirection: "column",
-         alignItems: "center",
+         alignItems: "left",
          backgroundColor: "#ffffff",
          color: "#111111"
       };
@@ -21,7 +21,7 @@ class Table {
             time: "result-time",
             actions: "result-counter",
             timeValue: "time-value",
-            difficulty: "result-difficulty"
+           
          },
          style: {
             'display': "flex",
@@ -30,8 +30,8 @@ class Table {
             'flex-direction': "row",
             'flex-wrap': "nowrap",
             'justify-content': 'space-evenly',
-            'align-items': 'center',
-            'text-align': "center",
+            'align-items': 'left',
+            'text-align': "left",
             'line-height': "100px",
             'border-bottom': "2px solid #999999"
          },

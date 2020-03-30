@@ -99,8 +99,8 @@ class Interface {
     const summaryPopup = document.createElement('div');
 
     summaryPopup.innerHTML = `
-    <h1>Win!</h1>
-    <h2>Time: ${time}</h2>
+    <h1>Yeah, you made it!</h1> <br/>
+    <h3>Time needed: ${time}</h2>
     <h3>Number of actions: ${actions}</h3>
     `;
 
@@ -108,12 +108,13 @@ class Interface {
     summaryPopup.style.width = '600px';
     summaryPopup.style.height = '300px';
     summaryPopup.style.position = 'absolute';
-    summaryPopup.style.top = '50%';
+    summaryPopup.style.top = '15%';
     summaryPopup.style.left = '50%';
     summaryPopup.style.transform = 'translate(-50%, -50%)';
     summaryPopup.style.color = '#fffff';
     summaryPopup.style.backgroundColor = '#FF6361';
     summaryPopup.style.textAlign = 'center';
+	summaryPopup.style.padding = '50px';
     summaryPopup.id = 'summary-popup';
 
     const btn = document.createElement('button');
@@ -122,6 +123,7 @@ class Interface {
     btn.id = 'new-game-btn';
     btn.className = 'btn';
     btn.style.backgroundColor = '#353FF2';
+	btn.style.marginTop = '40px';
     summaryPopup.appendChild(btn);
     container.appendChild(summaryPopup);
 

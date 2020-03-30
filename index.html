@@ -18,9 +18,15 @@
 	<div class="about"> 
 	<h1> Collective Memory </h1> <br/> <br/>
 	  <h2> This is a collection of artworks, created by european artists and designers during the first week of quarantene. </h2>
+		<p>Thank you all for taking the time to create. We hope you enjoyed this little task. Game only works on Desktop – sorry!<br/>
+			See <a href="#contributors">here</a> a list of the contributors.</p>
 		
 	</div> 	
 		<!-- Memory Game --> 
+	<a id="game"></a>	
+	<div class="game-header"> 	
+	 <h1> Let's play! </h1>
+		</div>
 		
       <div class="interface interface-1">
 		  
@@ -36,7 +42,7 @@
 		  
 		  
         <div class="username">
-          <label for="username-input">name:</label>
+          <label for="username-input">put your name:</label>
           <input type="text" name="username" id="username-input" />
           <button
             class="btn btn-ok"
@@ -55,7 +61,6 @@
           START
         </button>
         <button class="btn btn-reset" id="reset">RESET</button>
-        <button class="btn" id="tmpPopup">POPUP</button>
       </div>
 		  
         <div class="timer">game time: <span id="timer">00.00</span></div>
@@ -65,31 +70,92 @@
 	
 		
       <div id="rank-table" class="rank-table">
+		 <div class="rankinglist-header">
+			  <h2> Ranking List </h2>
+	  	</div>
         <div class="rank-table-header">
-          <div id="header-number" class="header-part">p.</div>
+          <div id="header-number" class="header-part">position</div>
           <div id="header-name" class="header-part">name</div>
           <div id="header-time" class="header-part">time</div>
           <div id="header-counter" class="header-part">actions</div>
-          <div id="header-difficulty" class="header-part">difficulty</div>
+        
         </div>
         <div id="results-table"></div>
+		  
       </div>
+		
+		<div class="contributors">
+			<a id="contributors"></a>
+			<h1>Contributors</h1>
+		 
+		
+			<div class="contributor">
+<!-- 				
+				<div class="floated_img">
+					<img src="img/Andrea-notitle.png" alt="Some image">
+					<p>No Title <br/> <b>Andrea Gaidano</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Caterina-secretincome.png" alt="Some image">
+					<p>No Title <br/> <b>Caterina Laruccia</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Celeste-hug.png" alt="Some image">
+					<p>Hug<br/> <b>Celeste Meisel</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Fabi-SAFTKOPF.png" alt="Another image">
+					<p>SAFTKOPF<br/> <b>Fabian Karrer</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Lisa-Aqua.png" alt="Some image">
+					<p>Aqua <br/> <b>Lisa Eggert</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Maria–in-un-bicchiere.png" alt="Another image">
+					<p>In Un Bicchiere <br/> <b>Maria Del Canto</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Polo-notitle.png" alt="Some image">
+					<p>No Title <br/> <b>Pauline Alt</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/Simon-reflect.png" alt="Another image">
+					<p>Reflect<br/> <b>Simon Abele</b></p>
+				</div>
+				 -->
+			<div class="floated_img">
+				<p> <a href="#game">back to game</a> </p>
+			</div>	
+			</div>
+			
+		
+		</div>
     </div>
     <script type="text/javascript">
       const imgUrls = [
-        // Add all image urls here
-        'img/Andrea-notitle.png',
-        'img/Caterina-secretincome.png',
-        'img/Celeste-hug.png',
-        'img/Fabi-SAFTKOPF.png',
-        'img/Lisa-Aqua.png',
-        'img/Maria–in-un-bicchiere.png',
-        'img/Polo-notitle.png',
-        'img/prova1.png',
-        'img/prova2.png',
-        'img/prova3.png',
-        'img/prova4.png',
-        'img/prova5.png'
+      'img/01a_FrancescoPiazza_Musica.png'
+      ,'img/01b_FrancescoPiazza_Dance.png'
+      ,'img/01c_FrancescoPiazza_Pattern.png'
+      ,'img/02_AndreaGaidano_Untitled.png'
+      ,'img/03_CaterinaLaruccia_Secret-income.png'
+      ,'img/04_FedericoBertacchini_Nature.png'
+      ,'img/05_FabioPozzolo_Buongiornissimo.png'
+      ,'img/06_MirijamAuen_Aufgabe2.png'
+      ,'img/07a_AngelaCaporale_Untitled.png'
+      ,'img/07b_AngelaCaporale_Untitled.png'
+      ,'img/08_CelesteMeisel_Hug.png'
+      ,'img/09_AannaLaumer_So-called-artwork.png'
+      ,'img/10_LeonieBahl_Me-going-outside-after-3-months-of-quarantine.png'
+      ,'img/11_MaxBoiger_Pixel-distancing.png'
+      ,'img/12_FabianKarrer_SAFTKOPF.png'
+      ,'img/13_JuliaReindl_Aquarell.png'
+      ,'img/14_LisaEggert_Aqua.png'
+      ,'img/15_MariaDelCanto_In-un-bicchiere.png'
+      ,'img/16a_MeikeHollnaicher_fresh-inside.png'
+      ,'img/16b_MeikeHollnaicher_Selbstlos.png'
+      ,'img/17_PaulineAlt_Untitled.png'
+      ,'img/18_SimonAbele_Reflect.png'
       ];
     </script>
 	  

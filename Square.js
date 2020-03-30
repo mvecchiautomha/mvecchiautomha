@@ -1,7 +1,7 @@
 class Square {
   constructor(value, order, partner = null) {
     const _COLORS = {
-      passive: "#888888",
+      passive: "#FF6361",
       active: "#1ED760",
       matched: "#4169E1",
       failed: "#ff0000"

@@ -12,15 +12,28 @@ body {
 /**About**/
 
 .about {
-
-
   width: 1300px;
-  padding: 20px 60px;
+  padding: 60px 0px;
   background-color: #fff;
 	color:#353FF2;
+	
+	
+}
+
+
+
+a {
+	text-decoration-line: underline;
+
 }
 
 /**Game**/
+
+.game-header {
+	text-align: left;
+	width: 1300px;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -39,8 +52,9 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1300px;
-  padding: 20px 60px;
+  padding: 20px 00px;
   background-color: #fff;
+	
 }
 
 .interface-2 {
@@ -163,6 +177,32 @@ body {
   color: #353FF2;
   border-bottom: 4px solid #FF6361;
   font-weight: bold;
+	text-align: left;
 }
 
 
+.rank-table-result {
+	text-align: left;
+	}
+
+
+.rankinglist-header {
+	padding-top: 100px;
+}
+
+/**Contributors**/
+.contributors{
+	width: 1300px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.floated_img
+{
+    float: left;
+	margin: 40px 40px 40px 0px;
+	width: 200px;
+}
+
+.floated_img img {
+	width: 200px;
+}
