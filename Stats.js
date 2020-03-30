@@ -94,6 +94,7 @@ class Stats {
   updateActionsCounter() {
     if (this.isPlay === true) {
       this.actionsCounter += 1;
+      document.getElementById("actions").innerHTML = this.actionsCounter
     }
   }
 

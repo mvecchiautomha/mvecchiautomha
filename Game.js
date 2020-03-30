@@ -104,7 +104,6 @@ class Game {
    }
 
    _getRandom(available) {
-      console.log(available, typeof available);
       if (!available.length || !(available instanceof Array)) {
          throw new Error("wrong type of available");
       }
