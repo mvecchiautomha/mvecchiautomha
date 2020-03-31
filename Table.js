@@ -1,7 +1,8 @@
 class Table {
    constructor(selector = '#results-table', rankTable = null) {
       this._htmlTable = document.querySelector(selector);
-      this._rankTable = rankTable ? rankTable : this.loadFromStorage();
+      // this._rankTable = rankTable ? rankTable : 
+      this.loadFromStorage();
       this._htmlIsSorted = false;
       this._tableIsSorted = false;
       this._tableProps = {
@@ -37,8 +38,6 @@ class Table {
          },
          childWidth: "25%",
       };
-      this.safeToStorage();
-      this.renderRankTable();
    }
 
    get htmlTable() {
@@ -114,8 +113,7 @@ class Table {
          throw new Error("set correct type of sorting");
 
       this._add(result, table, this.tableIsSorted, by, order);
-      this.safeToStorage();
-
+      this.safeToStorage(result);
    }
 
    sortTable(tab = this.rankTable, by = 'timeValue', order = 'ASC') {
@@ -130,18 +128,29 @@ class Table {
       });
    }
 
-   safeToStorage() {
-      localStorage.setItem('rankTable', JSON.stringify(this.rankTable));
+   safeToStorage(result) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", 'https://glacial-inlet-66933.herokuapp.com/', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify(result));
    }
 
    loadFromStorage() {
-      if (this.hasStorage()) {
-         return JSON.parse(localStorage.getItem('rankTable')).map(result => new Result(result._timeValue, result._time, result._actions, result._difficulty, result._playerName));
-      } else return [];
+      const userAction = async () => {
+         const response = await fetch('https://glacial-inlet-66933.herokuapp.com/');
+         const myJson = await response.json(); //extract JSON from the http response
+         // do something with myJson
+         this._rankTable = myJson.map(result => new Result(result._timeValue, result._time, result._actions, result._difficulty, result._playerName));
+         this.sortTable(this._rankTable, 'timeValue', 'ASC');
+         if (this._rankTable.length > 10) this._rankTable = this._rankTable.slice(0, 10);
+         this.renderRankTable();
+      }
+
+      return userAction()
    }
 
    setRankTableFromStorage() {
-      return this.rankTable = this.loadFromStorage();
+      this.loadFromStorage();
    }
 
    hasStorage() {
@@ -275,14 +284,24 @@ class Table {
 
       if (!isSorted) this.sortTable(table, by, order);
 
-      if (table[0][by] >= result[by]) return table.unshift(result);
+      if (table[0][by] >= result[by]){ 
+         table.unshift(result);
+         if (table.length > 10) table = table.slice(0,10);
+         return
+      }
 
-      if (table[table.length - 1][by] < result[by]) return table.push(result);
+      if (table[table.length - 1][by] < result[by]) { 
+         table.push(result);
+         if (table.length > 10) table = table.slice(0,10);
+         return
+      }
 
       for (let i = 0; i < table.length - 1; i++) {
          if (table[i][by] < result[by] && table[i + 1][by] >= result[by])
             return table.splice(i + 1, 0, result);
       }
+
+      if (table.length > 10) table = table.slice(0,10);
 
       return -1;
    }
