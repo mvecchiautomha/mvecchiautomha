@@ -182,7 +182,7 @@ class Table {
          for (const id in this.resultElementProps.typeId) {
             result.dataset[id] = id === 'number' ? i + 1 : this.rankTable[i][id];
             if (id === 'timeValue') continue;
-            result.innerHTML += `<div id="${this.resultElementProps.typeId[id]}" style = "${this.resultElementProps.childWidth}" class="${this.resultElementProps.typeClass}">
+            result.innerHTML += `<div id="${this.resultElementProps.typeId[id]}" style = "text-align:center;width:${this.resultElementProps.childWidth}" class="${this.resultElementProps.typeClass}">
                <span>${id === 'number' ? i+1 : this.rankTable[i][id]}</span>
             </div>`;
          }
