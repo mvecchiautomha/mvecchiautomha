@@ -64,14 +64,14 @@ class Game {
 
    _generateNumberOfSquares(difficulty) {
       const numberOfAllSquares = this.getAvailableValues().length;
+      this.stats.difficulty = "hard";
+      return this.numberOfSquares = 32
 
       if (difficulty === "easy") return (this.numberOfSquares = Math.round(numberOfAllSquares / 2));
 
       if (difficulty === "normal") return (this.numberOfSquares = Math.round(numberOfAllSquares / 4 * 3));
 
       if (difficulty === "hard") return (this.numberOfSquares = numberOfAllSquares);
-
-      this.stats.difficulty = "hard";
 
       return (this.numberOfSquares = numberOfAllSquares);
    }
@@ -170,7 +170,7 @@ class Game {
 
       const values = [...this.getAvailableValues()];
       const availablePositions = this._makeAvailablePositions();
-
+      
       while (this.squares.length < this.numberOfSquares) {
          const randomValue = this._getRandom(values);
          let randomPosition = this._getRandom(availablePositions);
@@ -192,7 +192,7 @@ class Game {
       }
 
       this._sortSquaresByOrder(this.squares);
-
+      console.log(this.squares);
       return this.squares;
    }
 

@@ -54,8 +54,20 @@ a {
   width: 90%;
   padding: 20px 00px;
   background-color: #fff;
+	flex-wrap: wrap; 
 	
 }
+
+.interface > * {
+    margin-left: 0;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.interface > .actions {
+    margin-right: 0;
+}
+
 
 .interface-2 {
   justify-content: center;
@@ -151,8 +163,8 @@ a {
 }
 
 .hard .game-square {
-  width: 15%;
-  padding-bottom: 15%;
+  width: 10%;
+  padding-bottom: 10%;
   
 }
 
@@ -216,11 +228,24 @@ a {
   margin-top: 30px;
   vertical-align: middle;
   width: 100%;
-	padding-bottom: 10px;
+  
+}
+
+.column .img_group img {
+  margin-bottom: 5px;
+	margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+	
+}
+
+.column .img_group {
+	margin-top:30px;
 }
 
 .column p {
 	padding-bottom: 20px;
+	padding-top: 20px;
 	border-bottom-style: solid;
 }
 
