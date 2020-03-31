@@ -244,6 +244,10 @@ class Table {
                break;
             }
          }
+
+         if (this.htmlTable.childNodes.length > 10) { 
+            this.htmlTable.childNodes[10].remove();
+         }
       }
 
       const htmlNodes = [...this.htmlTable.childNodes];
