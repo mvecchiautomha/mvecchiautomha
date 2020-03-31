@@ -6,7 +6,7 @@ class Table {
       this._tableIsSorted = false;
       this._tableProps = {
          display: "flex",
-         width: "1300px",
+         width: "100%",
          flexDirection: "column",
          alignItems: "left",
          backgroundColor: "#ffffff",
@@ -25,7 +25,7 @@ class Table {
          },
          style: {
             'display': "flex",
-            'width': "1300px",
+            'width': "100%",
             'height': "100px",
             'flex-direction': "row",
             'flex-wrap': "nowrap",

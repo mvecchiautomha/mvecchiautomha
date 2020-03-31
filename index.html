@@ -18,7 +18,7 @@
 	<div class="about"> 
 	<h1> Collective Memory </h1> <br/> <br/>
 	  <h2> This is a collection of artworks, created by european artists and designers during the first week of quarantene. </h2>
-		<p>Thank you all for taking the time to create. We hope you enjoyed this little task. Game only works on Desktop – sorry!<br/>
+		<p>Thank you all for taking the time to create. We hope you enjoyed this little task.<br/>
 			See <a href="#contributors">here</a> a list of the contributors.</p>
 		
 	</div> 	
@@ -55,24 +55,26 @@
         </div>
 		  
 		 	
-       <div class="interface interface-2">
+       
         <div class="info"><span></span></div>
         <button class="btn btn-start" data-game="start" id="start-stop">
           START
         </button>
         <button class="btn btn-reset" id="reset">RESET</button>
-      </div>
+      
 		  
         <div class="timer">game time: <span id="timer">00.00</span></div>
         <div class="actions">actions counter: <span id="actions">0</span></div>
       </div>
       <div id="grid" class="game-grid"></div>
 	
+		<!-- Ranking --> 
 		
-      <div id="rank-table" class="rank-table">
-		 <div class="rankinglist-header">
-			  <h2> Ranking List </h2>
-	  	</div>
+		<div class="rankinglist-wrap">
+		
+			  <h1> Ranking List </h1>
+			<div id="rank-table" class="rank-table">
+	  	
         <div class="rank-table-header">
           <div id="header-number" class="header-part">position</div>
           <div id="header-name" class="header-part">name</div>
@@ -81,57 +83,123 @@
         
         </div>
         <div id="results-table"></div>
-		  
-      </div>
+		</div> 
+      
+	  </div>
 		
+		
+		<!-- Contributors --> 
 		<div class="contributors">
 			<a id="contributors"></a>
 			<h1>Contributors</h1>
-		 
+
 		
 			<div class="contributor">
-<!-- 				
+				
+			<div class="row">
+			  <div class="column">
 				<div class="floated_img">
-					<img src="img/Andrea-notitle.png" alt="Some image">
-					<p>No Title <br/> <b>Andrea Gaidano</b></p>
+					<img src="img/02_AndreaGaidano_Untitled.png" alt="Some image">
+					<p>Untitled <br/> <b>Andrea Gaidano</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Caterina-secretincome.png" alt="Some image">
-					<p>No Title <br/> <b>Caterina Laruccia</b></p>
+					<img src="img/03_CaterinaLaruccia_Secret-income.png" alt="Some image">
+					<p>Untitled <br/> <b>Caterina Laruccia</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Celeste-hug.png" alt="Some image">
+					<img src="img/04_FedericoBertacchini_Nature.png" alt="Some image">
+					<p>Nature<br/> <b>Federico Bertacchini</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/05_FabioPozzolo_Buongiornissimo.png" alt="Some image">
+					<p>Buongiornissimo<br/> <b>Fabio Pozzolo</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/06_MirijamAuen_Aufgabe2.png" alt="Some image">
+					<p>Aufgabe2<br/> <b>Mirijam Auen</b></p>
+				</div>
+				  
+			</div>
+				
+			<div class="column">
+				<div class="floated_img">
+					<img src="img/07b_AngelaCaporale_Untitled.png" alt="Some image">
+					<p>Untitled<br/> <b>Angela Caporale</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/08_CelesteMeisel_Hug.png" alt="Some image">
 					<p>Hug<br/> <b>Celeste Meisel</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Fabi-SAFTKOPF.png" alt="Another image">
+					<img src="img/09_AannaLaumer_So-called-artwork.png" alt="Some image">
+					<p>So called Artwork<br/> <b>Anna Laumer</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/10_LeonieBahl_Me-going-outside-after-3-months-of-quarantine.png" alt="Some image">
+					<p>Me going outside </br>after 3 months of </br>quarantine<br/> <b>Leonie Bahl</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/11_MaxBoiger_Pixel-distancing.png" alt="Some image">
+					<p>Pixel Distancing<br/> <b>Max Boiger</b></p>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="floated_img">
+					<img src="img/12_FabianKarrer_SAFTKOPF.png" alt="Another image">
 					<p>SAFTKOPF<br/> <b>Fabian Karrer</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Lisa-Aqua.png" alt="Some image">
+					<img src="img/13_JuliaReindl_Aquarell.png" alt="Another image">
+					<p>New Beginning<br/> <b>Julia Reindl</b></p>
+				</div>
+				<div class="floated_img">
+					<img src="img/14_LisaEggert_Aqua.png" alt="Some image">
 					<p>Aqua <br/> <b>Lisa Eggert</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Maria–in-un-bicchiere.png" alt="Another image">
+					<img src="img/15_MariaDelCanto_In-un-bicchiere.png" alt="Another image">
 					<p>In Un Bicchiere <br/> <b>Maria Del Canto</b></p>
 				</div>
 				<div class="floated_img">
-					<img src="img/Polo-notitle.png" alt="Some image">
+					<img src="img/17_PaulineAlt_Untitled.png" alt="Some image">
 					<p>No Title <br/> <b>Pauline Alt</b></p>
 				</div>
+			</div>
+		
+			<div class="column">		
 				<div class="floated_img">
-					<img src="img/Simon-reflect.png" alt="Another image">
+					<img src="img/18_SimonAbele_Reflect.png" alt="Another image">
 					<p>Reflect<br/> <b>Simon Abele</b></p>
 				</div>
-				 -->
-			<div class="floated_img">
+				<div class="floated_img">
+					<img src="img/01a_FrancescoPiazza_Musica.png" alt="Another image">
+					<p>Musica<br/> <b>Francesco Piazza</b><br/>(initiator)</p>
+				</div>
+				<div class="floated_img">
+					<img src="img/16b_MeikeHollnaicher_Selbstlos.png" alt="Another image">
+					<p>Selbstlos<br/> <b>Meike Hollnaicher</b><br/>(initiator)</p>
+				</div>
+					
+			</div>
+	  		</div>
+	  
+	  		<div class="floated_img">
 				<p> <a href="#game">back to game</a> </p>
-			</div>	
 			</div>
 			
-		
+	 	 
 		</div>
     </div>
+
+	<!-- Footer --> 
+
+	<div class="footer">
+		<a href="imprint.html">Imprint</a>
+	</div>
+
+
+
     <script type="text/javascript">
       const imgUrls = [
       'img/01a_FrancescoPiazza_Musica.png'
@@ -173,6 +241,6 @@
 	  
 	  
 	  
-	  
+	</div>
   </body>
 </html>

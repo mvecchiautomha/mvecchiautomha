@@ -105,10 +105,10 @@ class Interface {
     `;
 
     container.style.position = 'relative';
-    summaryPopup.style.width = '600px';
-    summaryPopup.style.height = '300px';
-    summaryPopup.style.position = 'absolute';
-    summaryPopup.style.top = '15%';
+    summaryPopup.style.width = '35%';
+    summaryPopup.style.height = 'auto';
+    summaryPopup.style.position = 'fixed';
+    summaryPopup.style.top = '50%';
     summaryPopup.style.left = '50%';
     summaryPopup.style.transform = 'translate(-50%, -50%)';
     summaryPopup.style.color = '#fffff';
