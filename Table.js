@@ -209,7 +209,7 @@ class Table {
          for (const id in this.resultElementProps.typeId) {
             if (id === "timeValue") continue;
             newNode.dataset[id] = id === 'number' ? +i : result[id];
-            newNode.innerHTML += `<div id="${this.resultElementProps.typeId[id]}" style="${this.resultElementProps.childWidth}" class="${this.resultElementProps.typeClass}">
+            newNode.innerHTML += `<div id="${this.resultElementProps.typeId[id]}" style="text-align:center;width:${this.resultElementProps.childWidth}" class="${this.resultElementProps.typeClass}">
                   <span>${id === 'number' ? +i: result[id]}</span>
                </div>`;
          }
